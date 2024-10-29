@@ -110,7 +110,7 @@ p{
     .hero .btn-primary {
       background-color: #efa518;
       border: none;
-      padding: 12px 30px;
+      padding: 10px 10px;
       border-radius: 15px;
     }
     .hero .btn-primary:hover {
@@ -431,6 +431,7 @@ text-align: center;
       }
       .borderright{
         border-right: 1px solid #ffffff00;
+        margin: 10px;
       }
       .navbar-expand-lg{
         background-color:#ffffff00 ;
