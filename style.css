@@ -65,8 +65,7 @@ p{
     .navbar .btn-book {
       background-color: #efa518;
       color: white;
-      border-radius: 15px;
-      padding: 8px 20px;
+  
     }
     .navbar .btn-book:hover {
       background-color: #ffa62b;
@@ -110,8 +109,7 @@ p{
     .hero .btn-primary {
       background-color: #efa518;
       border: none;
-      padding: 10px 10px;
-      border-radius: 10px;
+     
     }
     .hero .btn-primary:hover {
       background-color: #ffa62b;
