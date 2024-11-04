@@ -68,6 +68,60 @@ p{
     .navbar .btn-book:hover {
       background-color: #ffa62b;
     }
+ /* Hero Section */
+ .herop {
+  background: url('img/1.jpg') no-repeat center center/cover;
+  background-color:#fff;
+  min-height: 54vh;
+  max-height: 54vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  border-radius: 15px;
+}
+.herop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+}
+.herop-content {
+  z-index: 2;
+}
+.herop h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.herop p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.herop .btn-primary {
+  background-color: #efa518;
+  border: none;
+ 
+}
+.herop .btn-primary:hover {
+  background-color: #ffa62b;
+}
+
+.edgep{
+  width: 100%;
+  min-height: 56vh;
+  max-height: 56vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
 
     /* Hero Section */
     .hero {
@@ -134,6 +188,9 @@ p{
     .borderright{
       border-right: 1px solid #fff;
     }
+    .nav-tabs {
+      --bs-nav-tabs-border-width: #fff;
+    }
     .icons{
       text-align: center;
       padding: 30px;
@@ -143,9 +200,16 @@ p{
       padding: 30px;
       opacity: 30%;
     }
+    .iconsp img{
+    
+      opacity: 30%;
+    }
     .icons img:hover{
     
       opacity: 50%;
+    }
+    .twocolump{
+      margin: 0px 10px;
     }
     .twocolum{
       margin: 0px 100px;
@@ -238,6 +302,12 @@ height: 50px !important;
   position: relative;
   max-width: 100%;
   transition: box-shadow 0.3s ease;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: #ffffff00;
+}
+.nav-link{
+  color: #000;
 }
 .deatils{
  float: right;
@@ -395,6 +465,79 @@ text-align: center;
 }
 #img1 {display:block;}
 #img2 {display:none}
+
+/* Slideshow container */
+.slideshow-containert {
+  position: relative;
+}
+
+/* Slides */
+.mySlidest {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* nextt & prevtious buttons */
+.prevt, .nextt {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "nextt button" to the right */
+.nextt {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevt:hover, .nextt:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  text-decoration: none;
+}
+
+/* The dot/bullet/indicator container */
+.dottt-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dott {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dott:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
     @media only screen and (max-width: 600px) {
       #img1 {display: none;}
     #img2 {display: block;}
@@ -409,6 +552,22 @@ text-align: center;
         display: block;
         margin-left: auto;
         margin-right: auto;
+      }
+      .edgep{
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+      }
+      .herop {
+       
+        min-height: 100vh;
+        max-height: 100vh;
+      border-radius: 0px;
       }
       .edge{
         width: 100%;
@@ -427,6 +586,9 @@ text-align: center;
       border-radius: 0px;
       }
       .hero::before { 
+        border-radius: 0px;
+      }
+      .herop::before { 
         border-radius: 0px;
       }
       .borderright{
