@@ -529,7 +529,7 @@ text-align: center;
 
 /* Add a background color to the active dot/circle */
 .active, .dott:hover {
-  background-color: #717171;
+  background-color: #ffffff00;
 }
 
 /* Add an italic font style to all quotes */
