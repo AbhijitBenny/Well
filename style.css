@@ -614,6 +614,9 @@ q {font-style: italic;}
   transform: translateX(0);
 }
     @media only screen and (max-width: 600px) {
+      .card{
+        margin: 0px;
+      }
       #img1 {display: none;}
     #img2 {display: block;}
       .twocolum{

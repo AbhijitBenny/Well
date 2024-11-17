@@ -5,32 +5,32 @@ ScrollReveal().reveal(".show-once", {
 });
 
 ScrollReveal().reveal(".fade-in", {
-  duration: 5000,
+  duration: 1000,
   move: 0
 });
 ScrollReveal().reveal(".scaleUp", {
-    duration: 4000,
+    duration: 1000,
     scale: 0.85
   });
 
   ScrollReveal().reveal(".fade-in", {
-    duration: 5000,
+    duration: 1000,
     move: 0
   });
 
   ScrollReveal().reveal(".fade-in4", {
-    duration: 6000,
+    duration: 2000,
     move: 0
   });
   ScrollReveal().reveal(".fade-in3", {
-    duration: 7000,
+    duration: 3000,
     move: 0
   });
   ScrollReveal().reveal(".fade-in2", {
-    duration: 8000,
+    duration: 4000,
     move: 0
   });
   ScrollReveal().reveal(".fade-in1", {
-    duration: 9000,
+    duration: 5000,
     move: 0
   });
