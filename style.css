@@ -70,7 +70,7 @@ p{
     }
  /* Hero Section */
  .herop {
-  background: url('img/1.jpg') no-repeat center center/cover;
+  
   background-color:#fff;
   min-height: 54vh;
   max-height: 54vh;
@@ -125,8 +125,8 @@ p{
 
     /* Hero Section */
     .hero {
-      background: url('img/1.jpg') no-repeat center center/cover;
-      background-color:#fff;
+      overflow: hidden !important;
+      background-color:#ffffff00;
       min-height: 93vh;
       max-height: 95vh;
       display: flex;
@@ -580,6 +580,13 @@ q {font-style: italic;}
   filter: invert(1);
   z-index: 999;
 }
+.backvideo{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;
@@ -658,7 +665,7 @@ q {font-style: italic;}
         
       }
       .hero {
-       
+       overflow: hidden !important;
         min-height: 100vh;
         max-height: 100vh;
       border-radius: 0px;
