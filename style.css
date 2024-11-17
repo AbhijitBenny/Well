@@ -508,9 +508,12 @@ text-align: center;
   text-decoration: none;
 }
 
+a{
+  text-decoration: none;
+}
 /* The dot/bullet/indicator container */
 .dottt-container {
-    text-align: center;
+    text-align: center !important;
     padding: 20px;
     background: #ddd;
 }
@@ -518,8 +521,8 @@ text-align: center;
 /* The dots/bullets/indicators */
 .dott {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -528,8 +531,8 @@ text-align: center;
 }
 
 /* Add a background color to the active dot/circle */
-.active, .dott:hover {
-  background-color: #ffffff00;
+.dott:active, .dott:hover {
+  background-color: #fffddf;
 }
 
 /* Add an italic font style to all quotes */
@@ -537,7 +540,79 @@ q {font-style: italic;}
 
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
+.price{
+  min-height: 500px;
+  margin: 30px;
+  padding: 30px;
 
+  text-align: center;
+  line-height: 35px;
+}
+.cost1{
+  
+  border: 1px solid #85a3b3;
+}
+.cost2{
+  background-color: #F2FAFD;
+  border-color: #FFFFFF;
+}
+.cost3{
+  background-color: #FFF9F5;
+  border-color: #FFFFFF;
+}
+.package span{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 80px;
+  color: #D1AB7D;
+}
+.package .btn-primary {
+  background-color: #efa518;
+  border: none;
+}
+.card{
+  margin: 30px;
+  --bs-card-bg:#fffddf;
+  --bs-card-border-width:none;
+}
+.bg-transparent {
+  --bs-bg-opacity: 1;
+  background-image: radial-gradient(#000000, #0202025e, #00000000);
+  filter: invert(1);
+  z-index: 999;
+}
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
     @media only screen and (max-width: 600px) {
       #img1 {display: none;}
     #img2 {display: block;}
