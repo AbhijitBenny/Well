@@ -13,14 +13,15 @@ body {
   }
   h1{
     font-size: 56px;
+    font-weight: 400;
   }
 h1,h2,h3{
   font-family: "Tenor Sans", serif;
-  font-weight: 600;
+
 }
 h5{
   font-family: "Tenor Sans", serif;
-  font-weight: 800;
+ 
 }
 p{
   font-family: "Public Sans", sans-serif;
@@ -154,7 +155,7 @@ p{
       z-index: 2;
     }
     .hero h1 {
-      font-size: 3rem;
+      
       margin-bottom: 20px;
     }
     .hero p {
@@ -547,7 +548,7 @@ q {font-style: italic;}
   min-height: 500px;
   margin: 30px;
   padding: 30px;
-
+border-radius: 10px;
   text-align: center;
   line-height: 35px;
 }
@@ -577,18 +578,41 @@ q {font-style: italic;}
   --bs-card-bg:#fffddf;
   --bs-card-border-width:none;
 }
-.bg-transparent {
-  --bs-bg-opacity: 1;
-  background-image: radial-gradient(#000000, #0202025e, #00000000);
-  filter: invert(1);
-  z-index: 999;
+.bg-transparentl {
+  opacity: 1;
+    background-image: linear-gradient(#000220, #000220);
+    mask-image: linear-gradient(to right, #000220, transparent);
+    filter: invert(1);
+    z-index: 999;
+    left: 30px;
+}
+.bg-transparentr {
+  opacity: 1;
+    background-image: linear-gradient(#000220, #000220);
+    mask-image: linear-gradient(to left, #000220, transparent);
+    filter: invert(1);
+    z-index: 999;
+    right: 30px;
+}
+.carousel-control-prev-icon {
+  left: -60px;
+  position: relative;
+}
+.carousel-control-next-icon {
+  right: -60px;
+  position: relative;
 }
 .backvideo{
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100%;
+ min-width: 100%;
+  z-index: -100;
+  object-fit:cover;
+  background-size: cover;
+  overflow: hidden;
+ 
 }
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
@@ -624,6 +648,36 @@ q {font-style: italic;}
   transform: translateX(0);
 }
     @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+      .bg-transparentl {
+     background-image: none;
+     left: -15px;
+          z-index: 999;
+      }
+      .bg-transparentr {
+        background-image: none;
+        right: -15px;
+          z-index: 999;
+      }
+      .carousel-control-prev-icon {
+        left: -15px;
+        width: 20px;
+        z-index: 999;
+        position: relative;
+      }
+      .carousel-control-next-icon {
+        right: -15px;
+        
+        width: 20px;
+        z-index: 999;
+        position: relative;
+      }
+
+
       .card{
         margin: 0px;
       }
