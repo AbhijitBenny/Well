@@ -115,7 +115,12 @@ p{
 .herop .btn-primary:hover {
   background-color: #ffa62b;
 }
-
+.whiteicon{
+  background-image: url(img/white.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: right top;
+}
 .edgep{
   width: 100%;
   min-height: 56vh;
