@@ -11,6 +11,10 @@ body {
   .accordion-item{
     margin: 10px;
   }
+  .icons img{
+     max-width: 120px;
+     
+  }
   h1{
     font-size: 56px;
     font-weight: 400;
@@ -73,6 +77,10 @@ p{
  .heropage{
   background: url('img/1.jpg') no-repeat center center/cover;
  }
+
+
+
+
  .herop {
   
   background-color:#fff;
@@ -360,6 +368,7 @@ height: 50px !important;
     border-radius: 10px;
 }
 .us1{
+
   background-image: url(img/home-1-3-771x1024.webp);
     background-position: center center;
     background-repeat: no-repeat;
@@ -389,6 +398,8 @@ height: 50px !important;
    
 }
 .Box{
+  max-width:360px ;
+  min-width:200px ;
   min-height: 500px;
   padding: 30px;
   position: relative;
@@ -497,6 +508,7 @@ text-align: center;
   padding: 16px;
   color: #888;
   font-weight: bold;
+  background-color: #44444400;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -512,8 +524,8 @@ text-align: center;
 
 /* On hover, add a black background color with a little bit see-through */
 .prevt:hover, .nextt:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
+  background-color: #44444400;
+  color: #888;
   text-decoration: none;
 }
 
@@ -579,6 +591,7 @@ border-radius: 10px;
   border: none;
 }
 .card{
+  max-width:560px ;
   margin: 30px;
   --bs-card-bg:#fffddf;
   --bs-card-border-width:none;
@@ -598,6 +611,16 @@ border-radius: 10px;
     filter: invert(1);
     z-index: 999;
     right: 30px;
+}
+#priceCarousel .nextt{
+  left: 20px;
+
+
+}
+#priceCarousel .prevt{
+
+  right: 20px;
+ 
 }
 .carousel-control-prev-icon {
   left: -60px;
@@ -619,6 +642,7 @@ border-radius: 10px;
   overflow: hidden;
  
 }
+
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;
@@ -653,6 +677,10 @@ border-radius: 10px;
   transform: translateX(0);
 }
     @media only screen and (max-width: 600px) {
+      .ms-3{
+        margin-left: 0rem !important;
+      }
+      
       h1 {
         font-size: 35px;
         font-weight: 400;
