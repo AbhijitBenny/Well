@@ -6,6 +6,17 @@
   <title>Wellness Code</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">	
+  <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  <style>
+    .slick-prev:before, .slick-next:before{
+    color:rgb(126, 124, 124);
+}
+.icon_slider .nav-item{
+  display: flex;
+  justify-content: center;
+}
+    </style>
 </head>
 <body>
 <div class="edgep">
@@ -62,8 +73,10 @@
         <br>
         <h2>   <br></h2>
         <br>
+        
+
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
+        <ul class="nav nav-tabs icon_slider"  role="tablist">
           <div class="col-sm col-6">
             <li class="nav-item">
               <a class="nav-link active" data-bs-toggle="tab" href="#home">
@@ -865,8 +878,48 @@ Lorem ipsum dolor sit amet, eum modus ludus efficiendi ad, in sea ceteros postul
       
     </div>
   </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>	
+<script type="text/javascript">
+  $('.icon_slider').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+ 
+  ]
+});
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
   <script>
+   
     // Get the button
     let mybutton = document.getElementById("myBtn");
     
@@ -887,6 +940,22 @@ Lorem ipsum dolor sit amet, eum modus ludus efficiendi ad, in sea ceteros postul
       document.documentElement.scrollTop = 0;
     }
     </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll('.nav-link').forEach(tab => {
+  tab.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Remove active and show classes from all tab panes
+    document.querySelectorAll('.tab-pane').forEach(pane => {
+      pane.classList.remove('active', 'show');
+    });
+
+    // Add active and show classes to the clicked tab's target
+    const target = document.querySelector(this.getAttribute('href'));
+    target.classList.add('active', 'show');
+  });
+});
+
+    </script>
 </body>
 </html>

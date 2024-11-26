@@ -15,6 +15,8 @@ body {
      max-width: 120px;
      
   }
+
+
   h1{
     font-size: 56px;
     font-weight: 400;
@@ -620,8 +622,10 @@ border-radius: 10px;
 #priceCarousel .prevt{
 
   right: 20px;
- 
 }
+
+
+
 .carousel-control-prev-icon {
   left: -60px;
   position: relative;
@@ -641,6 +645,9 @@ border-radius: 10px;
   background-size: cover;
   overflow: hidden;
  
+}
+.mySlidest img{ 
+  width: 300px;
 }
 
 @media (max-width: 767px) {
@@ -677,6 +684,14 @@ border-radius: 10px;
   transform: translateX(0);
 }
     @media only screen and (max-width: 600px) {
+ 
+.mySlidest img{ 
+  width: 200px;
+}
+      #priceCarousel .carousel-inner .carousel-item.active, #priceCarousel .carousel-inner .carousel-item-next,#priceCarousel .carousel-inner .carousel-item-prev{
+        display: block !important;
+        }
+
       .ms-3{
         margin-left: 0rem !important;
       }
