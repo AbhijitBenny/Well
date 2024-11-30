@@ -8,6 +8,11 @@ body {
   background-color: #fffddf;
   font-family: "Public Sans", sans-serif !important
   }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: var(--bs-accordion-btn-icon-transform);
+}
   .accordion-item{
     margin: 10px;
   }
@@ -15,8 +20,6 @@ body {
      max-width: 120px;
      
   }
-
-
   h1{
     font-size: 56px;
     font-weight: 400;

@@ -87,11 +87,11 @@
         <div class="row mx-auto my-auto justify-content-center">
       
          
-          <div id="recipeCarousel" class="carousel slide  fade-in4 show-once" data-bs-ride="carousel">
+          <div id="recipeCarousel" class="carousel slide  fade-in4 show-once" data-bs-ride="carousel"  >
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
                 <div class="col-md-3">
-                  <div class="card">
+                  <div class="card" data-mdb-animation="slide-in-left">
                     <div class="Box us1 ">
                       <div class="bx">
                         <h3>
@@ -113,7 +113,7 @@
               </div>
               <div class="carousel-item">
                 <div class="col-md-3">
-                  <div class="card">
+                  <div class="card" data-mdb-animation="slide-in-left">
                     <div class="Box us2 ">
                       <div class="bx">
                         <h3>
@@ -445,11 +445,11 @@
     <div class="col-md-3">
         <div class="footer_logo">
         <img src="img/black.png" height="60px">
-     
-        <p>3501 N. Belt Line Rd.
-          Suite 105 <br>
-          Sunnyvale, Texas 75182<br>
-        </p>
+        <p>972-961-114
+          <br/>
+          info@wellnesscode.com
+         </p>
+      
         </div>
       </div>
       <div class="col-md-3">
@@ -469,12 +469,17 @@
         <p>TEAM<br/></p>
       </div>
       <div class="col-md-3">
-        <h5>Contact</h5>
+        <h5>Address</h5>
         <br/>
-        <p>972-961-114
-          <br/>
-          info@wellnesscode.com
-         </p>
+        <p>3501 N. Belt Line Rd.
+          Suite 105 <br>
+          Sunnyvale, Texas 75182<br>
+        </p>
+        <br/>
+        <p>3501 N. Belt Line Rd.
+          Suite 105 <br>
+          Sunnyvale, Texas 75182<br>
+        </p>
       </div>
   </div>
   </div>
@@ -575,7 +580,19 @@
     });
   });
 </script>
+<script>
+// Select all accordion buttons
+const accordionButtons = document.querySelectorAll('.accordion-button');
 
+// Add event listener to each accordion button
+accordionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Toggle the aria-expanded attribute
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+  });
+});
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scroll.js"></script>
 </body>
