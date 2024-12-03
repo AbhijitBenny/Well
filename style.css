@@ -10,8 +10,7 @@ body {
   }
   
   .accordion-button:not(.collapsed)::after {
-    background-image: none;
-    transform: var(--bs-accordion-btn-icon-transform);
+    transform: none;
 }
   .accordion-item{
     margin: 10px;
