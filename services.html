@@ -124,14 +124,7 @@
               <p>IV Hydration</p></a>
           </li>
           </div>
-          <div class="col-sm col-6">
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#menu6">
-              <img src="img/spa.png">
-              <br/>
-              <p>Injections</p></a>
-          </li>
-          </div>
+       
           <div class="col-sm col-6">
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#menu7">
@@ -1084,6 +1077,14 @@
   autoplay: true,
   autoplaySpeed: 2000,
   responsive: [
+  {
+      breakpoint: 9999,
+      settings: {
+        slidesToShow: 8,
+        autoplay: false,
+        arrows: false
+      }
+    },
     {
       breakpoint: 1024,
       settings: {
