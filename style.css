@@ -730,6 +730,8 @@ border-radius: 10px;
 
       .card{
         margin: 0px;
+        margin: auto;
+        width: 88%;
       }
       #img1 {display: none;}
     #img2 {display: block;}
