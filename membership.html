@@ -6,13 +6,35 @@
   <title>Wellness Code</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">	
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  <style>
+    .slick-prev:before, .slick-next:before{
+    color:rgb(126, 124, 124);
+}
+.carousel_services .nav-item{
+  display: flex;
+  justify-content: center;
+}
+.carousel_price .slick-prev:before{
+  left: 30px !important;
+  position: absolute;
+  z-index: 999998;
+}
+.carousel_price .slick-next:before{
+  left: -30px !important;
+  position: absolute;
+  z-index: 999;
+}
+    </style>
 </head>
 <body>
 <div class="edgep">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid twocolum">
-      <a class="navbar-brand text-white" href="index.html">
+      <a class="navbar-brand text-white" href="main.html">
       
         <img id="img1" src="img/logo.png" alt=""  style="height: 60px;">
         <img id="img2" src="img/nl.png" alt=""  style="height: 60px;">
@@ -22,23 +44,23 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="membership.html">Membership </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="membership.html">Membership </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
         <a href="#" class="btn btn-book ms-3">Book Appointment</a>
       </div>
     </div>
@@ -59,137 +81,118 @@
 <div class="hight"></div>
 <div class="hight"></div>
 <div class="container ">
-    <h1 style="text-align: center;">Price and Packages</h1>
-    <div id="priceCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="price cost1">
-            <div class="package text-center">
-              <h3>Comfort Relax</h3>
-              <br />
-              <span>$90</span>/per day
-              <br />
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet vim<br />
-                Eam impedit molestie ett<br />
-                Mei populo est<br />
-                No vim dolor vidisse placerat<br />
-                No impedit<br />
-                Vivendo oportere
-              </p>
-              <a class="btn btn-primary" href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="price cost2">
-            <div class="package text-center">
-              <h3>Premium Spa</h3>
-              <br />
-              <span>$150</span>/per day
-              <br />
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet vim<br />
-                Eam impedit molestie ett<br />
-                Mei populo est<br />
-                No vim dolor vidisse placerat<br />
-                No impedit<br />
-                Vivendo oportere
-              </p>
-              <a class="btn btn-primary" href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="price cost3">
-            <div class="package text-center">
-              <h3>Luxury Retreat</h3>
-              <br />
-              <span>$250</span>/per day
-              <br />
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet vim<br />
-                Eam impedit molestie ett<br />
-                Mei populo est<br />
-                No vim dolor vidisse placerat<br />
-                No impedit<br />
-                Vivendo oportere
-              </p>
-              <a class="btn btn-primary" href="#">Book Now</a>
-            </div>
-          </div>
-        </div>
+  <h1 style="text-align: center;">Price and Packages</h1>
+
+  <div class="row ">
+  <div class="carousel_price ">
+    <div class="price_card">
+    <div class="price cost3">
+      <div class="package">
+        <h3>Beauty Code Bank</h3>
+        <br />
+        <span>$99</span>/month<br />
+        <br /> (6-month minimum,<br> in-office only)
+        <br />
+        <p> <br />
+          <strong>Key Benefits</strong><br />
+          24 weekly Semaglutide injections<br />
+          1 Free Skinny Shot/month ($30 value)<br />
+          Weekly check-ins with a medical provider
+          <br />
+          <br />
+          <strong>Additional Perks</strong><br />
+          All lab work and 3D body scanning included<br />
+          Diet guidance provided<br />
+          20% off Skinny Shots (reg. $30)<br />
+          20% off Slim IV (reg. $145)<br />
+          <br />
+        
+        </p>
+        <a class="btn btn-primary" href="#">Book Now</a>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#priceCarousel" data-bs-slide="prev">
-        <a class="prevt" onclick="plusSlides(-1)">❮</a>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#priceCarousel" data-bs-slide="next">
-        <a class="nextt" onclick="plusSlides(1)">❯</a>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  
-    <div class="row d-none d-md-flex">
-      <div class="col-md-4">
-        <div class="price cost1">
-          <div class="package">
-            <h3>Comfort Relax</h3>
+    </div>
+    <div class="price_card">
+      <div class="price cost2">
+        <div class="package">
+          <h3>IV Membership</h3>
+          <br />
+          <span>$199</span>/month
+          <br /> <br />(6-month minimum, <br />
+          in-office only)
+          <br /> <br />
+          <strong>Key Benefits</strong>
+          <br />
+          <p> <strong>Monthly IV Bag <br /></strong> Choose any IV bag, excluding NAD+ <br />
             <br />
-            <span>$90</span>/per day
+            <strong>Discounts</strong>
+            <br />
+            20% off additional IV bags (excludes NAD+) (varies) <br />
+            <br />
+            15% off all IV add-ons and vitamin injections (varies) <br />
+            <br />
+            10% off NAD+ IV or injections (varies)<br />
+            <br />
+          </p>
+          <a class="btn btn-primary" href="#">Book Now</a>
+        </div>
+      </div></div>
+      <div class="price_card">
+      <div class="price cost3">
+        <div class="package">
+          <h3>Semaglutide Membership</h3>
+          <br />
+          <span>$350</span>/month<br />
+          <br /> (6-month minimum,<br> in-office only)
+          <br />
+          <p> <br />
+            <strong>Key Benefits</strong><br />
+            24 weekly Semaglutide injections<br />
+            1 Free Skinny Shot/month ($30 value)<br />
+            Weekly check-ins with a medical provider
             <br />
             <br />
-            <p>Lorem ipsum dolor sit amet vim<br />
-                Eam impedit molestie ett<br />
-                Mei populo est<br />
-                No vim dolor vidisse placerat<br />
-                No impedit<br />
-                Vivendo oportere</p>
-            <a class="btn btn-primary" href="#">Book Now</a>
-          </div>
+            <strong>Additional Perks</strong><br />
+            All lab work and 3D body scanning included<br />
+            Diet guidance provided<br />
+            20% off Skinny Shots (reg. $30)<br />
+            20% off Slim IV (reg. $145)<br />
+            <br />
+          
+          </p>
+          <a class="btn btn-primary" href="#">Book Now</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="price cost2">
-          <div class="package">
-            <h3>Premium Spa</h3>
-            <br />
-            <span>$150</span>/per day
-            <br />
-            <br />
-            <p>Lorem ipsum dolor sit amet vim<br />
-                Eam impedit molestie ett<br />
-                Mei populo est<br />
-                No vim dolor vidisse placerat<br />
-                No impedit<br />
-                Vivendo oportere</p>
-            <a class="btn btn-primary" href="#">Book Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="price cost3">
-          <div class="package">
-            <h3>Luxury Retreat</h3>
-            <br />
-            <span>$250</span>/per day
-            <br />
-            <br />
-            <p>Lorem ipsum dolor sit amet vim<br />
-                Eam impedit molestie ett<br />
-                Mei populo est<br />
-                No vim dolor vidisse placerat<br />
-                No impedit<br />
-                Vivendo oportere</p>
-            <a class="btn btn-primary" href="#">Book Now</a>
-          </div>
+    </div>
+      <div class="price_card">
+      <div class="price cost2">
+        <div class="package">
+          <h3>Tirzepatide Membership</h3>
+          <br />
+          <span>$550</span>/month
+          <br/>
+          <br />(6-month minimum,<br/> in-office only)
+          <br/>    <br />
+          <strong>Key Benefits</strong>
+          <br />
+          <p>24 weekly Tirzepatide injections<br />
+            1 Free Skinny Shot/month ($30 value)<br />
+            Weekly check-ins with a medical provider<br />
+            <br/>
+          <strong>Additional Perks</strong>
+          <br />
+          All lab work and 3D body scanning included<br />
+          Diet guidance provided<br />
+          20% off Skinny Shots<br/>(reg. $30)
+          <br />
+          20% off Slim IV (reg. $145)<br /></p>
+          <a class="btn btn-primary" href="#">Book Now</a>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
   <div class="hight"></div>
   <div class="hight"></div>
 <div class="container-fluid footer">
@@ -258,6 +261,93 @@
       document.documentElement.scrollTop = 0;
     }
     </script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>	
+<script type="text/javascript">
+$('.carousel_services').slick({
+slidesToShow: 4,
+slidesToScroll: 1,
+autoplay: true,
+autoplaySpeed: 2000,
+responsive: [
+{
+    breakpoint: 9999,
+    settings: {
+      slidesToShow: 4,
+      autoplay: false,
+      arrows: false
+    }
+  },
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+
+]
+});
+
+$('.carousel_price').slick({
+slidesToShow: 4,
+slidesToScroll: 1,
+autoplay: true,
+autoplaySpeed: 2000,
+responsive: [
+{
+    breakpoint: 9999,
+    settings: {
+      slidesToShow: 4,
+      autoplay: false,
+      arrows: false
+    }
+  },
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true,
+      arrows: false
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+
+]
+});
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

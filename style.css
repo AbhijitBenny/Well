@@ -19,6 +19,7 @@ body {
      max-width: 120px;
      
   }
+
   h1{
     font-size: 56px;
     font-weight: 400;
@@ -596,7 +597,7 @@ border-radius: 10px;
 }
 .card{
   max-width:560px ;
-  margin: 30px;
+  padding: 30px;
   --bs-card-bg:#fffddf;
   --bs-card-border-width:none;
 }
@@ -616,26 +617,7 @@ border-radius: 10px;
     z-index: 999;
     right: 30px;
 }
-#priceCarousel .nextt{
-  left: 20px;
 
-
-}
-#priceCarousel .prevt{
-
-  right: 20px;
-}
-
-
-
-.carousel-control-prev-icon {
-  left: -60px;
-  position: relative;
-}
-.carousel-control-next-icon {
-  right: -60px;
-  position: relative;
-}
 .backvideo{
   position:absolute;
   top:0;
@@ -652,47 +634,13 @@ border-radius: 10px;
   width: 300px;
 }
 
-@media (max-width: 767px) {
-  .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-
-  .carousel-inner .carousel-item-start.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
     @media only screen and (max-width: 600px) {
  
 .mySlidest img{ 
   width: 200px;
 }
-      #priceCarousel .carousel-inner .carousel-item.active, #priceCarousel .carousel-inner .carousel-item-next,#priceCarousel .carousel-inner .carousel-item-prev{
-        display: block !important;
-        }
+     
 
       .ms-3{
         margin-left: 0rem !important;
@@ -713,20 +661,7 @@ border-radius: 10px;
         right: -15px;
           z-index: 999;
       }
-      .carousel-control-prev-icon {
-        left: -15px;
-        width: 20px;
-        z-index: 999;
-        position: relative;
-      }
-      .carousel-control-next-icon {
-        right: -15px;
-        
-        width: 20px;
-        z-index: 999;
-        position: relative;
-      }
-
+  
 
       .card{
         margin: 0px;
