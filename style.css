@@ -84,8 +84,26 @@ p{
  }
 
 
-
-
+.boxx{
+  text-align: center;
+  padding: 30px;
+ 
+  border-radius: 15px;
+  background-color: #efa518;
+ min-height: 200px;
+ color: #fff;
+ flex: 1; /* Equal width for all columns */
+ box-shadow: 0px 4px 9px 5px rgb(36 36 36 / 24%)
+}
+.boxx h3{
+font-size: 25px;
+}
+.onecolu{
+margin-right:30px;
+}
+.threecolu{
+  margin-left:30px;
+}
  .herop {
   
   background-color:#fff;
@@ -588,7 +606,7 @@ border-radius: 10px;
 }
 .package span{
   font-family: "Cormorant Garamond", serif;
-  font-size: 80px;
+  font-size: 50px;
   color: #D1AB7D;
 }
 .package .btn-primary {
