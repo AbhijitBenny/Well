@@ -79,7 +79,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.contnt img{
+.logo{
   width: 500px;
  }
 .top_part h1{
@@ -89,9 +89,21 @@
   text-decoration: none;
   color: #fff;
  }
+ .object {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+}
 
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
  @media only screen and (max-width: 600px) {
-  .contnt img{
+  .logo{
     width: 300px;
    }
    .main-container {
