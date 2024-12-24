@@ -82,7 +82,25 @@ p{
  .heropage{
   background: url('img/1.jpg') no-repeat center center/cover;
  }
-
+ .cherry{
+  background-image: url(img/pay.webp); background-repeat: no-repeat; background-size: cover; padding: 60px; height: 80vh; border-radius: 15px;
+ }
+.btnwhite{
+  
+  background-color: #000000;
+  border: none;
+  width: 300px;
+  height: 55px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 .boxx{
   text-align: center;
@@ -90,7 +108,7 @@ p{
  
   border-radius: 15px;
   background-color: #efa518;
- min-height: 200px;
+ min-height: 250px;
  color: #fff;
  flex: 1; /* Equal width for all columns */
  box-shadow: 0px 4px 9px 5px rgb(36 36 36 / 24%)
