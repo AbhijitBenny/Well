@@ -724,21 +724,24 @@ border-radius: 10px;
 .mySlidest img{ 
   width: 300px;
 }
-
+.deskf{
+  display: block;
+} 
+.mobf{
+  display: none;
+}
 
     @media only screen and (max-width: 600px) {
-      .accordion button{
-        font-size: 14px;
-        
-      }
-      .tabs{
-        width: 100%;
-      }
-      .tabs button{
-      border-radius: 15PX  !important;
-      }
-      .tabscontent{
-        width: 100%;
+      .btntab {
+        background-color: #fff;
+        color: #efa518;
+        float: right;
+    }
+      .deskf{
+        display: none;
+      } 
+      .mobf{
+        display: block;
       }
  
 .mySlidest img{ 
