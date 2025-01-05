@@ -38,6 +38,61 @@ p{
 .footer p{
   font-size: 14px;
 }
+
+/* Style the tab */
+.tabs {
+  float: left;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+  display: block;
+  background-color: inherit;
+ border-radius: 15px 0 0 15px;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.btntab{
+  background-color: #efa518;
+    color: white;
+  float: right;
+
+  } 
+.btntab:hover{
+  background-color: white !important;
+  color: #efa518  !important;
+  border-color:#fff !important;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: #f9e6c7b8;
+}
+
+/* Create an active/current "tab button" class */
+.tabs button.active {
+  background-color: #f9e6c7b8;
+}
+
+/* Style the tab content */
+.tabscontent {
+  float: left;
+  padding: 0px 12px;
+  background-color: #f9e6c7b8;
+  width: 70%;
+  border-left: none;
+  border-radius: 0px 15px 15px 0;
+  padding: 30px;
+
+}
 .tbmtxt{
   padding: 10px;
   text-align: center;
@@ -672,6 +727,19 @@ border-radius: 10px;
 
 
     @media only screen and (max-width: 600px) {
+      .accordion button{
+        font-size: 14px;
+        
+      }
+      .tabs{
+        width: 100%;
+      }
+      .tabs button{
+      border-radius: 15PX  !important;
+      }
+      .tabscontent{
+        width: 100%;
+      }
  
 .mySlidest img{ 
   width: 200px;
