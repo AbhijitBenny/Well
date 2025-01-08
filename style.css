@@ -43,7 +43,7 @@ p{
 .tabs {
   float: left;
   width: 30%;
-  height: 300px;
+
 }
 
 /* Style the buttons inside the tab */
@@ -93,6 +93,65 @@ p{
   padding: 30px;
 
 }
+
+
+
+/* Style the tab */
+.tabss {
+  float: left;
+  width: 30%;
+
+}
+
+/* Style the buttons inside the tab */
+.tabss button {
+  display: block;
+  background-color: inherit;
+ border-radius: 15px 0 0 15px;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.btnstab{
+  background-color: #efa518;
+    color: white;
+  float: right;
+
+  } 
+.btntabs:hover{
+  background-color: white !important;
+  color: #efa518  !important;
+  border-color:#fff !important;
+}
+
+/* Change background color of buttons on hover */
+.tabss button:hover {
+  background-color: #f9e6c7b8;
+}
+
+/* Create an active/current "tab button" class */
+.tabss button.active {
+  background-color: #f9e6c7b8;
+}
+
+/* Style the tab content */
+.tabsscontent {
+  float: left;
+  padding: 0px 12px;
+  background-color: #f9e6c7b8;
+  width: 70%;
+  border-left: none;
+  border-radius: 0px 15px 15px 0;
+  padding: 30px;
+
+}
+
+
 .tbmtxt{
   padding: 10px;
   text-align: center;
@@ -382,7 +441,7 @@ height: 50px !important;
   border-radius: 30px;
 }
 .accordion button{
-  font-size: 28px;
+  font-size: 20px;
   
 }
 
