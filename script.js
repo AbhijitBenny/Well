@@ -1,4 +1,5 @@
 
+
   document.addEventListener('DOMContentLoaded', () => {
     const accordion = document.getElementById('accordionExample');
     const items = accordion.querySelectorAll('.accordion-collapse');
