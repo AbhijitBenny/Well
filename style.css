@@ -13,6 +13,21 @@ body {
 
     width: 200px;
   }
+  .getdirection{
+    transition: .4s
+  }
+  .getdirection:hover{
+    margin-left: 30px;
+  }
+  .lineheight{
+    line-height: 30px;
+  }
+  .disflex{
+    display: flex;
+  }
+  .flexone{
+    flex: 1;
+  }
   .servheigt .tabscontent{
     height: 100vh;
   }
@@ -341,7 +356,8 @@ margin-right:30px;
 .whiteicon{
   background-image: url(img/white.png);
   background-repeat: no-repeat;
-  background-size: 200px;
+  background-size: 400px;
+  
   background-position: right top;
 }
 .edgep{
@@ -637,7 +653,6 @@ height: 50px !important;
 
 }
 .footer{
-  background-image: url(img/footer-removebg-preview.png);
   background-color: #f5e3c5;
   padding: 60px;
   background-position: left top;
@@ -746,6 +761,7 @@ text-align: center;
 
 a{
   text-decoration: none;
+  color: #415962;
 }
 /* The dot/bullet/indicator container */
 .dottt-container {
@@ -861,6 +877,17 @@ border-radius: 10px;
       } 
       .mobf{
         display: block;
+      }
+      .disflex{
+        display: block;
+      }
+      .onecolu{
+        margin-right:0px ;
+        margin-bottom: 30px;
+      }
+      .threecolu{
+        margin-left: 0px;
+        margin-top: 30px;
       }
  
 .mySlidest img{ 
